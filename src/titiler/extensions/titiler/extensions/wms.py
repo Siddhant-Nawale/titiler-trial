@@ -23,7 +23,7 @@ from titiler.core.resources.enums import ImageType, MediaType
 from titiler.core.utils import render_image
 
 DEFAULT_TEMPLATES = Jinja2Templates(
-    directory="",
+    directory="./templates",
     loader=jinja2.ChoiceLoader([jinja2.PackageLoader(__package__, "templates")]),
 )  # type:ignore
 
